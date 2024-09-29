@@ -11,7 +11,7 @@ const Header = () => {
         <div className="flex justify-between items-center">
           <div className="text-3xl font-bold niigata-text-gradient">新潟コシヒカリ</div>
           <div className="md:hidden">
-            <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-niigata-800">
+            <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-niigata-700">
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
@@ -22,10 +22,10 @@ const Header = () => {
               <li><a href="#faq" className="text-niigata-700 hover:text-niigata-900 transition-colors">FAQ</a></li>
             </ul>
           </nav>
-          <Button className="hidden md:block bg-rice-500 hover:bg-rice-600 text-niigata-900">今すぐ購入</Button>
+          <Button className="hidden md:block bg-rice-500 hover:bg-rice-700 text-niigata-900">今すぐ購入</Button>
         </div>
         {isMenuOpen && (
-          <Button className="w-full mt-4 bg-rice-500 hover:bg-rice-600 text-niigata-900 md:hidden">今すぐ購入</Button>
+          <Button className="w-full mt-4 bg-rice-500 hover:bg-rice-700 text-niigata-900 md:hidden">今すぐ購入</Button>
         )}
       </div>
     </header>

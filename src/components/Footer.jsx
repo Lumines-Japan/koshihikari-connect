@@ -17,7 +17,7 @@ const Footer = () => {
                 rows="3"
                 placeholder="お問い合わせ内容"
               ></textarea>
-              <Button type="submit" className="w-full bg-rice-500 text-niigata-900 hover:bg-rice-400">送信</Button>
+              <Button type="submit" className="w-full bg-rice-500 text-niigata-900 hover:bg-rice-700">送信</Button>
             </form>
           </div>
           <div>
