@@ -3,25 +3,28 @@ import { Button } from "@/components/ui/button";
 
 const ProductIntro = () => {
   return (
-    <section id="product" className="py-24 luxury-gradient">
+    <section id="product" className="py-24 bg-gray-50">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 luxury-text-gradient">新潟県産コシヒカリ</h2>
-        <div className="flex flex-col md:flex-row items-center">
-          <div className="w-full md:w-1/2 mb-8 md:mb-0">
-            <img src="/koshihikari.jpg" alt="新潟県産コシヒカリ" className="rounded-lg shadow-2xl mx-auto object-cover w-full h-auto" />
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-800">新潟県産コシヒカリの特徴</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <img src="/rice-grain.jpg" alt="粒選別" className="w-full h-48 object-cover rounded-t-lg mb-4" />
+            <h3 className="text-2xl font-semibold mb-2">厳選された粒</h3>
+            <p>一粒一粒丁寧に選別し、最高品質の米だけをお届けします。</p>
           </div>
-          <div className="w-full md:w-1/2 md:pl-12">
-            <h3 className="text-3xl font-semibold mb-6 luxury-text-gradient">最高品質のお米をあなたの食卓へ</h3>
-            <p className="mb-6 text-luxury-700 leading-relaxed">新潟県の豊かな自然と匠の技が生み出す、極上のコシヒカリ。豊富な水源から育まれた、つやつやとした粒々、もちもちとした食感、そして香り高い味わいが特徴です。</p>
-            <ul className="list-disc list-inside mb-8 text-luxury-700 space-y-2">
-              <li>100%新潟県産</li>
-              <li>減農薬栽培</li>
-              <li>令和6年度新米</li>
-              <li>豊富な水源で育った逸品</li>
-              <li>精米したてをお届け</li>
-            </ul>
-            <Button className="w-full md:w-auto bg-luxury-800 hover:bg-luxury-900 text-white text-lg px-8 py-3">詳細を見る</Button>
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <img src="/rice-field.jpg" alt="自然環境" className="w-full h-48 object-cover rounded-t-lg mb-4" />
+            <h3 className="text-2xl font-semibold mb-2">豊かな自然環境</h3>
+            <p>新潟の肥沃な大地と清らかな水で育った逸品です。</p>
           </div>
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <img src="/rice-cooking.jpg" alt="炊き上がり" className="w-full h-48 object-cover rounded-t-lg mb-4" />
+            <h3 className="text-2xl font-semibold mb-2">極上の食感</h3>
+            <p>もちもちとした食感と香り高い味わいをお楽しみいただけます。</p>
+          </div>
+        </div>
+        <div className="text-center mt-12">
+          <Button className="bg-red-600 hover:bg-red-700 text-white text-lg px-8 py-3">商品詳細を見る</Button>
         </div>
       </div>
     </section>
