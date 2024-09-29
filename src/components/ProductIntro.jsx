@@ -8,7 +8,7 @@ const ProductIntro = () => {
         <h2 className="text-3xl font-bold text-center mb-8">新潟県産コシヒカリ</h2>
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-8 md:mb-0">
-            <img src="/placeholder.svg" alt="新潟県産コシヒカリ" className="rounded-lg shadow-md mx-auto object-cover" />
+            <img src="/koshihikari.jpg" alt="新潟県産コシヒカリ" className="rounded-lg shadow-md mx-auto object-cover w-full h-auto" />
           </div>
           <div className="md:w-1/2 md:pl-8">
             <h3 className="text-2xl font-semibold mb-4">最高品質のお米をあなたの食卓へ</h3>
