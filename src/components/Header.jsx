@@ -15,11 +15,11 @@ const Header = () => {
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
-          <nav className={`${isMenuOpen ? 'block' : 'hidden'} md:block`}>
-            <ul className="flex flex-col md:flex-row md:space-x-8 space-y-4 md:space-y-0 mt-4 md:mt-0">
-              <li><a href="#product" className="text-niigata-700 hover:text-niigata-900 transition-colors">商品紹介</a></li>
-              <li><a href="#reviews" className="text-niigata-700 hover:text-niigata-900 transition-colors">お客様の声</a></li>
-              <li><a href="#faq" className="text-niigata-700 hover:text-niigata-900 transition-colors">FAQ</a></li>
+          <nav className={`${isMenuOpen ? 'block' : 'hidden'} md:block absolute top-full left-0 w-full md:static md:w-auto bg-niigata-50 md:bg-transparent z-50`}>
+            <ul className="flex flex-col md:flex-row md:space-x-8 space-y-4 md:space-y-0 p-4 md:p-0">
+              <li><a href="#product" className="block py-2 px-4 text-niigata-800 hover:bg-niigata-100 md:hover:bg-transparent md:hover:text-niigata-600 transition-colors">商品紹介</a></li>
+              <li><a href="#reviews" className="block py-2 px-4 text-niigata-800 hover:bg-niigata-100 md:hover:bg-transparent md:hover:text-niigata-600 transition-colors">お客様の声</a></li>
+              <li><a href="#faq" className="block py-2 px-4 text-niigata-800 hover:bg-niigata-100 md:hover:bg-transparent md:hover:text-niigata-600 transition-colors">FAQ</a></li>
             </ul>
           </nav>
           <Button className="hidden md:block bg-rice-500 hover:bg-rice-700 text-niigata-900">今すぐ購入</Button>
