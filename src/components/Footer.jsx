@@ -1,6 +1,7 @@
 import React from 'react';
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import { Twitter, Facebook, Instagram } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -29,14 +30,14 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-semibold mb-4">SNS</h3>
             <div className="flex space-x-4">
-              <a href="#" className="hover:text-gray-300">Twitter</a>
-              <a href="#" className="hover:text-gray-300">Facebook</a>
-              <a href="#" className="hover:text-gray-300">Instagram</a>
+              <a href="#" className="hover:text-gray-300"><Twitter size={24} /></a>
+              <a href="#" className="hover:text-gray-300"><Facebook size={24} /></a>
+              <a href="#" className="hover:text-gray-300"><Instagram size={24} /></a>
             </div>
           </div>
         </div>
         <div className="mt-8 text-center">
-          <p>&copy; 2023 新潟コシヒカリ株式会社 All rights reserved.</p>
+          <p>&copy; 2024 新潟コシヒカリ株式会社 All rights reserved.</p>
         </div>
       </div>
     </footer>
