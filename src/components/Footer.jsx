@@ -22,7 +22,7 @@ const Footer = () => {
           </div>
           <div>
             <h3 className="text-2xl font-semibold mb-6 text-niigata-700">会社情報</h3>
-            <p className="mb-2">新潟コシヒカリ株式会社</p>
+            <p className="mb-2 font-medium">新潟コシヒカリ株式会社</p>
             <p className="mb-2">〒950-0000 新潟県新潟市中央区○○町1-1-1</p>
             <p className="mb-2">TEL: 025-XXX-XXXX</p>
             <p>営業時間: 平日 9:00〜17:00</p>
@@ -37,7 +37,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-12 text-center text-niigata-600">
-          <p>&copy; 2024 新潟コシヒカリ株式会社 All rights reserved.</p>
+          <p className="font-medium">&copy; 2024 新潟コシヒカリ株式会社 All rights reserved.</p>
         </div>
       </div>
     </footer>
