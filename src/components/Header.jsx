@@ -16,7 +16,7 @@ const Header = () => {
             </button>
           </div>
           <nav className={`${isMenuOpen ? 'block' : 'hidden'} md:block absolute top-full left-0 w-full md:static md:w-auto bg-niigata-50 md:bg-transparent z-50`}>
-            <ul className="flex flex-col md:flex-row md:space-x-8 space-y-4 md:space-y-0 p-4 md:p-0">
+            <ul className="flex flex-col md:flex-row md:space-x-6 space-y-4 md:space-y-0 p-4 md:p-0 md:ml-auto text-sm">
               <li><a href="#product" className="block py-2 px-4 text-niigata-800 hover:bg-niigata-100 md:hover:bg-transparent md:hover:text-niigata-600 transition-colors">商品紹介</a></li>
               <li><a href="#farmers" className="block py-2 px-4 text-niigata-800 hover:bg-niigata-100 md:hover:bg-transparent md:hover:text-niigata-600 transition-colors">生産者紹介</a></li>
               <li><a href="#recipes" className="block py-2 px-4 text-niigata-800 hover:bg-niigata-100 md:hover:bg-transparent md:hover:text-niigata-600 transition-colors">レシピ</a></li>
