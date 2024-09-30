@@ -18,9 +18,11 @@ const Index = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
-      <main>
+      <main className="pt-24"> {/* Added padding-top to account for fixed header */}
         <Hero />
-        <ProductIntro />
+        <section id="product">
+          <ProductIntro />
+        </section>
         <section className="py-16 bg-snow-50">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl font-bold mb-8 text-niigata-800">商品詳細</h2>
@@ -42,11 +44,19 @@ const Index = () => {
           </div>
         </section>
         <BlogSection />
-        <RecipeSection />
-        <FarmerIntroduction />
-        <CustomerReviewGallery />
+        <section id="recipes">
+          <RecipeSection />
+        </section>
+        <section id="farmers">
+          <FarmerIntroduction />
+        </section>
+        <section id="reviews">
+          <CustomerReviewGallery />
+        </section>
         <SpecialOffer />
-        <FAQ />
+        <section id="faq">
+          <FAQ />
+        </section>
         <SocialFeed />
       </main>
       <Footer />
