@@ -1,8 +1,9 @@
 import React from 'react';
+import Layout from '../components/Layout';
 
 const LegalInformation = () => {
   return (
-    <div className="container mx-auto px-4 py-8">
+    <Layout>
       <h1 className="text-3xl font-bold mb-6">特定商取引法に基づく表記</h1>
       
       <section className="mb-8">
@@ -45,7 +46,7 @@ const LegalInformation = () => {
         <h2 className="text-2xl font-semibold mb-4">返品・交換について</h2>
         <p>商品到着後7日以内に限り、返品・交換を承ります。詳細は返品ポリシーをご確認ください。</p>
       </section>
-    </div>
+    </Layout>
   );
 };
 
