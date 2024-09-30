@@ -1,5 +1,4 @@
 import React from 'react';
-import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Twitter, Facebook, Instagram } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -11,15 +10,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div>
             <h3 className="text-2xl font-semibold mb-6 text-niigata-700">お問い合わせ</h3>
-            <form>
-              <Input type="email" placeholder="メールアドレス" className="mb-4 bg-snow-100 border-niigata-200 text-niigata-900 placeholder-niigata-400" />
-              <textarea
-                className="w-full p-3 mb-4 rounded bg-snow-100 border-niigata-200 text-niigata-900 placeholder-niigata-400"
-                rows="3"
-                placeholder="お問い合わせ内容"
-              ></textarea>
-              <Button type="submit" className="w-full bg-niigata-600 text-snow-50 hover:bg-niigata-700">送信</Button>
-            </form>
+            <Link to="/contact">
+              <Button className="w-full bg-niigata-600 text-snow-50 hover:bg-niigata-700">
+                お問い合わせはこちら
+              </Button>
+            </Link>
           </div>
           <div>
             <h3 className="text-2xl font-semibold mb-6 text-niigata-700">会社情報</h3>
