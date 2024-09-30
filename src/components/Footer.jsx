@@ -37,7 +37,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-12 text-center text-niigata-600">
-          <p className="font-medium">&copy; 2024 株式会社スーラ All rights reserved.</p>
+          <p className="font-medium">&copy; 2024 Sula Co., Ltd. All rights reserved.</p>
         </div>
       </div>
     </footer>
