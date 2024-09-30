@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
-    <section className="relative mt-14 md:mt-0 h-[calc(100vh-96px)] flex items-center justify-center bg-cover bg-center" style={{backgroundImage: 'url("/hero-background.jpg")'}}>
+    <section className="relative h-[calc(100vh-96px)] flex items-center justify-center bg-cover bg-center" style={{backgroundImage: 'url("/hero-background.jpg")'}}>
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
       <div className="relative z-10 text-center text-snow-50">
         <h1 className="text-5xl md:text-7xl font-bold mb-4">極上の新潟コシヒカリ</h1>
