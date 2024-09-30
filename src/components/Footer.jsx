@@ -25,7 +25,7 @@ const Footer = () => {
           </div>
           <div>
             <h3 className="text-2xl font-semibold mb-6 text-niigata-700">お問い合わせ</h3>
-            <div className="flex justify-center space-x-4 mb-6">
+            <div className="flex flex-col space-y-2 mb-6">
               <Link to="/shipping-and-returns" className="text-niigata-600 hover:text-niigata-800 transition-colors">配送・返品</Link>
               <Link to="/legal-information" className="text-niigata-600 hover:text-niigata-800 transition-colors">特定商取引法</Link>
               <Link to="/privacy-policy" className="text-niigata-600 hover:text-niigata-800 transition-colors">プライバシーポリシー</Link>
