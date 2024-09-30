@@ -6,7 +6,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="bg-snow-50 shadow-md fixed w-full z-50">
+    <header className="bg-snow-50 shadow-md fixed top-0 left-0 right-0 z-50"> {/* fixedとtop-0, left-0, right-0を追加 */}
       <div className="container mx-auto px-4 py-6">
         <div className="flex justify-between items-center">
           <div className="text-3xl font-bold niigata-text-gradient">新潟コシヒカリ</div>
