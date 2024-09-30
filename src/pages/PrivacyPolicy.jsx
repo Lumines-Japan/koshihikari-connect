@@ -39,7 +39,7 @@ const PrivacyPolicy = () => {
         <h1 className="text-3xl font-bold mb-6 text-niigata-800">プライバシーポリシー</h1>
         
         {policies.map((policy, index) => (
-          <section key={index} className="mb-8 bg-snow-50 p-6 rounded-lg shadow-md">
+          <section key={index} className="mb-8">
             <h2 className="text-2xl font-semibold mb-4 text-niigata-700">{policy.title}</h2>
             <p className="text-niigata-600 whitespace-pre-line">{policy.content}</p>
           </section>
