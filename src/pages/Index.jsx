@@ -18,7 +18,7 @@ const Index = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
-      <main className="pt-24"> {/* Added padding-top to account for fixed header */}
+      <main className="pt-24">
         <Hero />
         <section id="product">
           <ProductIntro />
@@ -26,12 +26,14 @@ const Index = () => {
         <section className="py-16 bg-snow-50">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl font-bold mb-8 text-niigata-800">商品詳細</h2>
-            <Link to="/product/1">
-              <Button className="mr-4">特選コシヒカリ 5kg</Button>
-            </Link>
-            <Link to="/product/2">
-              <Button>有機栽培コシヒカリ 2kg</Button>
-            </Link>
+            <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
+              <Link to="/product/1">
+                <Button className="w-full sm:w-auto">特選コシヒカリ 5kg</Button>
+              </Link>
+              <Link to="/product/2">
+                <Button className="w-full sm:w-auto">有機栽培コシヒカリ 2kg</Button>
+              </Link>
+            </div>
           </div>
         </section>
         <section className="py-16 bg-snow-100">
