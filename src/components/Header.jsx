@@ -24,8 +24,8 @@ const Header = () => {
               <li><Link to="/#reviews" className="block py-2 px-4 text-niigata-800 hover:bg-niigata-100 md:hover:bg-transparent md:hover:text-niigata-600 transition-colors">お客様の声</Link></li>
               <li><Link to="/#faq" className="block py-2 px-4 text-niigata-800 hover:bg-niigata-100 md:hover:bg-transparent md:hover:text-niigata-600 transition-colors">FAQ</Link></li>
             </ul>
-            <div className="mt-4 md:hidden">
-              <Button className="w-full bg-rice-500 hover:bg-rice-700 text-niigata-900">今すぐ購入</Button>
+            <div className="mt-4 md:hidden px-4 pb-4">
+              <Button className="w-3/4 mx-auto block bg-rice-500 hover:bg-rice-700 text-niigata-900">今すぐ購入</Button>
             </div>
           </nav>
           <Button className="hidden md:block bg-rice-500 hover:bg-rice-700 text-niigata-900">今すぐ購入</Button>
