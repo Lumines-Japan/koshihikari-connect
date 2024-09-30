@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div className="md:col-span-2">
-            <h3 className="text-2xl font-semibold mb-6 text-niigata-700">会社情報</h3>
+            <h3 className="text-2xl font-semibold mb-6 text-niigata-700">CONTACT</h3>
             <p className="mb-2 font-medium">株式会社スーラ</p>
             <p className="mb-2">〒959-1264 新潟県燕市八王寺656−2 新潟営業所</p>
             <p className="mb-2">TEL: 0256-46-8493</p>
