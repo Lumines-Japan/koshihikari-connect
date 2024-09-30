@@ -2,6 +2,7 @@ import React from 'react';
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Twitter, Facebook, Instagram } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -37,7 +38,12 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-12 text-center text-niigata-600">
-          <p className="font-medium">&copy; 2024 Sula Co., Ltd. All rights reserved.</p>
+          <p className="font-medium mb-4">&copy; 2024 Sula Co., Ltd. All rights reserved.</p>
+          <div className="flex justify-center space-x-4">
+            <Link to="/shipping-and-returns" className="text-niigata-600 hover:text-niigata-800 transition-colors">配送・返品</Link>
+            <Link to="/legal-information" className="text-niigata-600 hover:text-niigata-800 transition-colors">特定商取引法</Link>
+            <Link to="/privacy-policy" className="text-niigata-600 hover:text-niigata-800 transition-colors">プライバシーポリシー</Link>
+          </div>
         </div>
       </div>
     </footer>
