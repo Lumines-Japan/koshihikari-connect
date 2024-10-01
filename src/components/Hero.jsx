@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
-    <section className="relative h-[calc(100vh-96px)] flex items-center justify-center overflow-hidden">
+    <section className="relative h-screen flex items-center justify-center overflow-hidden">
       <video
         className="absolute inset-0 w-full h-full object-cover"
         autoPlay
