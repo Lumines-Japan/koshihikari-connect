@@ -1,10 +1,19 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.playbackRate = 0.5; // 再生速度を0.5倍（半分の速度）に設定
+    }
+  }, []);
+
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
       <video
+        ref={videoRef}
         className="absolute inset-0 w-full h-full object-cover"
         autoPlay
         loop
