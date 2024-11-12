@@ -30,26 +30,28 @@ const Index = () => {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
               <div className="flex flex-col items-center space-y-4">
-                <img
-                  src="/rice-product-1.jpg"
-                  alt="特選コシヒカリ 5kg"
-                  className="w-full max-w-md rounded-lg shadow-lg"
-                />
+                <div className="w-full h-[400px] relative">
+                  <img
+                    src="/rice-product-1.jpg"
+                    alt="特選コシヒカリ 5kg"
+                    className="w-full h-full object-contain rounded-lg shadow-lg"
+                  />
+                </div>
                 <div className="flex space-x-2">
                   <img
                     src="/rice-detail-1.jpg"
                     alt="商品詳細1"
-                    className="w-20 h-20 object-cover rounded-md cursor-pointer hover:opacity-75 transition-opacity"
+                    className="w-24 h-24 object-cover rounded-md cursor-pointer hover:opacity-75 transition-opacity"
                   />
                   <img
                     src="/rice-detail-2.jpg"
                     alt="商品詳細2"
-                    className="w-20 h-20 object-cover rounded-md cursor-pointer hover:opacity-75 transition-opacity"
+                    className="w-24 h-24 object-cover rounded-md cursor-pointer hover:opacity-75 transition-opacity"
                   />
                   <img
                     src="/rice-detail-3.jpg"
                     alt="商品詳細3"
-                    className="w-20 h-20 object-cover rounded-md cursor-pointer hover:opacity-75 transition-opacity"
+                    className="w-24 h-24 object-cover rounded-md cursor-pointer hover:opacity-75 transition-opacity"
                   />
                 </div>
                 <Link to="/product/dummy-1">
@@ -57,26 +59,28 @@ const Index = () => {
                 </Link>
               </div>
               <div className="flex flex-col items-center space-y-4">
-                <img
-                  src="/rice-product-2.jpg"
-                  alt="特選コシヒカリ 10kg"
-                  className="w-full max-w-md rounded-lg shadow-lg"
-                />
+                <div className="w-full h-[400px] relative">
+                  <img
+                    src="/rice-product-2.jpg"
+                    alt="特選コシヒカリ 10kg"
+                    className="w-full h-full object-contain rounded-lg shadow-lg"
+                  />
+                </div>
                 <div className="flex space-x-2">
                   <img
                     src="/rice-detail-4.jpg"
                     alt="商品詳細4"
-                    className="w-20 h-20 object-cover rounded-md cursor-pointer hover:opacity-75 transition-opacity"
+                    className="w-24 h-24 object-cover rounded-md cursor-pointer hover:opacity-75 transition-opacity"
                   />
                   <img
                     src="/rice-detail-5.jpg"
                     alt="商品詳細5"
-                    className="w-20 h-20 object-cover rounded-md cursor-pointer hover:opacity-75 transition-opacity"
+                    className="w-24 h-24 object-cover rounded-md cursor-pointer hover:opacity-75 transition-opacity"
                   />
                   <img
                     src="/rice-detail-6.jpg"
                     alt="商品詳細6"
-                    className="w-20 h-20 object-cover rounded-md cursor-pointer hover:opacity-75 transition-opacity"
+                    className="w-24 h-24 object-cover rounded-md cursor-pointer hover:opacity-75 transition-opacity"
                   />
                 </div>
                 <Link to="/product/dummy-2">
