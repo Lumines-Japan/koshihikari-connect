@@ -5,17 +5,17 @@ const recipes = [
   {
     title: "コシヒカリの炊き込みご飯",
     description: "季節の野菜と一緒に炊き上げる香り豊かな炊き込みご飯",
-    image: "https://user0514.cdnw.net/shared/img/thumb/BIBAI2135_TP_V.jpg"
+    image: "https://dffgvfuyuzktboucthiq.supabase.co/storage/v1/object/public/company-images/asset/BIBAI2135_TP_V.jpg"
   },
   {
     title: "コシヒカリのおにぎり",
     description: "シンプルながら美味しい、基本のおにぎりレシピ",
-    image: "https://user0514.cdnw.net/shared/img/thumb/SAWA_asariiri_TP_V.jpg"
+    image: "https://dffgvfuyuzktboucthiq.supabase.co/storage/v1/object/public/company-images/asset/SAWA_asariiri_TP_V.jpg"
   },
   {
     title: "コシヒカリの寿司",
     description: "新鮮な魚介類と合わせた本格的な寿司レシピ",
-    image: "https://user0514.cdnw.net/shared/img/thumb/nihonbashisusiHFKE9488_TP_V.jpg"
+    image: "https://dffgvfuyuzktboucthiq.supabase.co/storage/v1/object/public/company-images/asset/nihonbashisusiHFKE9488_TP_V.jpg"
   }
 ];
 

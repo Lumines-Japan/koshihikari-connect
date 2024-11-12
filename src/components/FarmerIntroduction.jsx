@@ -5,17 +5,17 @@ const farmers = [
   {
     name: "佐藤 健太",
     description: "40年以上の稲作経験を持つベテラン農家。自然と共生する農法を実践。",
-    image: "https://user0514.cdnw.net/shared/img/thumb/fk_ine01_TP_V.jpg"
+    image: "https://dffgvfuyuzktboucthiq.supabase.co/storage/v1/object/public/company-images/asset/fk_ine01_TP_V.jpg"
   },
   {
     name: "田中 美咲",
     description: "若手女性農家。最新技術と伝統的な手法を組み合わせた革新的な農業に取り組む。",
-    image: "https://user0514.cdnw.net/shared/img/thumb/rinmonsan03152100_TP_V.jpg"
+    image: "https://dffgvfuyuzktboucthiq.supabase.co/storage/v1/object/public/company-images/asset/rinmonsan03152100_TP_V.jpg"
   },
   {
     name: "鈴木 一郎",
     description: "有機栽培にこだわり、安全で美味しいコシヒカリを生産する農家。",
-    image: "https://user0514.cdnw.net/shared/img/thumb/shikun103128_TP_V.jpg"
+    image: "https://dffgvfuyuzktboucthiq.supabase.co/storage/v1/object/public/company-images/asset/shikun103128_TP_V.jpg"
   }
 ];
 
