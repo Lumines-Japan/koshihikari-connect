@@ -1,5 +1,9 @@
 import Stripe from 'stripe';
 
+if (!import.meta.env.VITE_STRIPE_SECRET_KEY) {
+  throw new Error('Stripe Secret Key is not set. Please set VITE_STRIPE_SECRET_KEY in your environment variables.');
+}
+
 const stripe = new Stripe(import.meta.env.VITE_STRIPE_SECRET_KEY);
 
 export const getProducts = async () => {
