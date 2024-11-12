@@ -8,6 +8,7 @@ import ProductDetail from "./pages/ProductDetail";
 import ShippingAndReturns from "./pages/ShippingAndReturns";
 import LegalInformation from "./pages/LegalInformation";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import Contact from "./pages/Contact";
 
 const queryClient = new QueryClient();
 
@@ -33,6 +34,7 @@ const App = () => (
           <Route path="/shipping-and-returns" element={<ShippingAndReturns />} />
           <Route path="/legal-information" element={<LegalInformation />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
