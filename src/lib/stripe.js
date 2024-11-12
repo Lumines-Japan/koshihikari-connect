@@ -7,6 +7,7 @@ const dummyProducts = [
     description: '新潟県産の最高級コシヒカリです。',
     images: ['/placeholder.svg'],
     default_price: {
+      id: 'price_dummy1',
       unit_amount: 2500,
     },
   },
@@ -16,6 +17,7 @@ const dummyProducts = [
     description: '新潟県産の最高級コシヒカリです。',
     images: ['/placeholder.svg'],
     default_price: {
+      id: 'price_dummy2',
       unit_amount: 4800,
     },
   },
