@@ -15,7 +15,7 @@ const farmers = [
   {
     name: "鈴木 一郎",
     description: "有機栽培にこだわり、安全で美味しいコシヒカリを生産する農家。",
-    image: "https://o-dan.net/ja/wp-content/uploads/sites/4/2023/12/organic-farmer.jpg"
+    image: "https://user0514.cdnw.net/shared/img/thumb/shikun103128_TP_V.jpg"
   }
 ];
 
