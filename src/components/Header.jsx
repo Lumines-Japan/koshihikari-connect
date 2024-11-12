@@ -10,7 +10,7 @@ const Header = () => {
     e.preventDefault();
     const element = document.getElementById(targetId);
     if (element) {
-      const offset = element.offsetTop - 80; // ヘッダーの高さを考慮
+      const offset = element.offsetTop - 80;
       window.scrollTo({
         top: offset,
         behavior: "smooth",
@@ -24,7 +24,7 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           <Link to="/" className="text-2xl font-bold niigata-text-gradient">
-            新潟コシヒカリ
+            新潟保内米 長谷川農園
           </Link>
           <div className="md:hidden">
             <button
