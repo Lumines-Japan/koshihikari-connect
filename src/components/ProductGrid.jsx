@@ -21,7 +21,7 @@ const ProductGrid = ({ products }) => {
             )}
             <p className="text-sm text-gray-600">{product.description}</p>
             <p className="text-lg font-bold mt-2">
-              ¥{(product.default_price.unit_amount / 100).toLocaleString()}
+              ¥{(product.default_price.unit_amount).toLocaleString()}
             </p>
           </CardContent>
           <CardFooter>
