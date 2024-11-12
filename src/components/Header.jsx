@@ -6,6 +6,19 @@ import { Link } from "react-router-dom";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const handleNavClick = (e, targetId) => {
+    e.preventDefault();
+    const element = document.getElementById(targetId);
+    if (element) {
+      const offset = element.offsetTop - 80; // ヘッダーの高さを考慮
+      window.scrollTo({
+        top: offset,
+        behavior: "smooth",
+      });
+      setIsMenuOpen(false);
+    }
+  };
+
   return (
     <header className="bg-snow-50 shadow-md fixed top-0 left-0 right-0 z-50">
       <div className="container mx-auto px-4 py-4">
@@ -22,48 +35,55 @@ const Header = () => {
             </button>
           </div>
           <nav
-            className={`${isMenuOpen ? "block" : "hidden"} md:block absolute top-full left-0 w-full md:static md:w-auto bg-snow-50 md:bg-transparent z-50`}
+            className={`${
+              isMenuOpen ? "block" : "hidden"
+            } md:block absolute top-full left-0 w-full md:static md:w-auto bg-snow-50 md:bg-transparent z-50`}
           >
             <ul className="flex flex-col md:flex-row md:space-x-6 space-y-4 md:space-y-0 p-4 md:p-0">
               <li>
-                <Link
-                  to="/#product"
+                <a
+                  href="#product"
+                  onClick={(e) => handleNavClick(e, "product")}
                   className="block py-2 px-4 text-niigata-800 hover:bg-niigata-100 md:hover:bg-transparent md:hover:text-niigata-600 transition-colors"
                 >
                   商品紹介
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
-                  to="/#farmers"
+                <a
+                  href="#farmers"
+                  onClick={(e) => handleNavClick(e, "farmers")}
                   className="block py-2 px-4 text-niigata-800 hover:bg-niigata-100 md:hover:bg-transparent md:hover:text-niigata-600 transition-colors"
                 >
                   生産者紹介
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
-                  to="/#recipes"
+                <a
+                  href="#recipes"
+                  onClick={(e) => handleNavClick(e, "recipes")}
                   className="block py-2 px-4 text-niigata-800 hover:bg-niigata-100 md:hover:bg-transparent md:hover:text-niigata-600 transition-colors"
                 >
                   レシピ
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
-                  to="/#reviews"
+                <a
+                  href="#reviews"
+                  onClick={(e) => handleNavClick(e, "reviews")}
                   className="block py-2 px-4 text-niigata-800 hover:bg-niigata-100 md:hover:bg-transparent md:hover:text-niigata-600 transition-colors"
                 >
                   お客様の声
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
-                  to="/#faq"
+                <a
+                  href="#faq"
+                  onClick={(e) => handleNavClick(e, "faq")}
                   className="block py-2 px-4 text-niigata-800 hover:bg-niigata-100 md:hover:bg-transparent md:hover:text-niigata-600 transition-colors"
                 >
                   FAQ
-                </Link>
+                </a>
               </li>
             </ul>
             <div className="mt-4 md:hidden px-4 pb-4">
