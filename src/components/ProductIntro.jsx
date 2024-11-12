@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const ProductIntro = () => {
   return (
@@ -24,7 +25,9 @@ const ProductIntro = () => {
           </div>
         </div>
         <div className="text-center mt-12">
-          <Button className="bg-niigata-600 hover:bg-niigata-700 text-snow-50 text-lg px-8 py-3">商品詳細を見る</Button>
+          <Link to="/products">
+            <Button className="bg-niigata-600 hover:bg-niigata-700 text-snow-50 text-lg px-8 py-3">商品詳細を見る</Button>
+          </Link>
         </div>
       </div>
     </section>
