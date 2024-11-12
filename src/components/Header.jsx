@@ -1,18 +1,10 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const handleNavClick = (e, target) => {
-    e.preventDefault();
-    const element = document.querySelector(target);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-      setIsMenuOpen(false); // モバイルメニューを閉じる
-    }
-  };
 
   return (
     <header className="bg-snow-50 shadow-md fixed top-0 left-0 right-0 z-50">
@@ -34,49 +26,44 @@ const Header = () => {
           >
             <ul className="flex flex-col md:flex-row md:space-x-6 space-y-4 md:space-y-0 p-4 md:p-0">
               <li>
-                <a
-                  href="#product"
-                  onClick={(e) => handleNavClick(e, "#product")}
+                <Link
+                  to="/#product"
                   className="block py-2 px-4 text-niigata-800 hover:bg-niigata-100 md:hover:bg-transparent md:hover:text-niigata-600 transition-colors"
                 >
                   商品紹介
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#farmers"
-                  onClick={(e) => handleNavClick(e, "#farmers")}
+                <Link
+                  to="/#farmers"
                   className="block py-2 px-4 text-niigata-800 hover:bg-niigata-100 md:hover:bg-transparent md:hover:text-niigata-600 transition-colors"
                 >
                   生産者紹介
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#recipes"
-                  onClick={(e) => handleNavClick(e, "#recipes")}
+                <Link
+                  to="/#recipes"
                   className="block py-2 px-4 text-niigata-800 hover:bg-niigata-100 md:hover:bg-transparent md:hover:text-niigata-600 transition-colors"
                 >
                   レシピ
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#reviews"
-                  onClick={(e) => handleNavClick(e, "#reviews")}
+                <Link
+                  to="/#reviews"
                   className="block py-2 px-4 text-niigata-800 hover:bg-niigata-100 md:hover:bg-transparent md:hover:text-niigata-600 transition-colors"
                 >
                   お客様の声
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#faq"
-                  onClick={(e) => handleNavClick(e, "#faq")}
+                <Link
+                  to="/#faq"
                   className="block py-2 px-4 text-niigata-800 hover:bg-niigata-100 md:hover:bg-transparent md:hover:text-niigata-600 transition-colors"
                 >
                   FAQ
-                </a>
+                </Link>
               </li>
             </ul>
             <div className="mt-4 md:hidden px-4 pb-4">
@@ -85,6 +72,9 @@ const Header = () => {
               </Button>
             </div>
           </nav>
+          <Button className="hidden md:block bg-rice-500 hover:bg-rice-700 text-niigata-900">
+            今すぐ購入
+          </Button>
         </div>
       </div>
     </header>
