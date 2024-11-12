@@ -5,7 +5,7 @@ const farmers = [
   {
     name: "佐藤 健太",
     description: "40年以上の稲作経験を持つベテラン農家。自然と共生する農法を実践。",
-    image: "https://user0514.cdnw.net/shared/img/thumb/umedaLightroom_MG_4905_TP_V.jpg"
+    image: "https://user0514.cdnw.net/shared/img/thumb/fk_ine01_TP_V.jpg"
   },
   {
     name: "田中 美咲",
