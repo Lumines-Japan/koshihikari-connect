@@ -6,7 +6,7 @@ const socialPosts = [
   {
     platform: 'Twitter',
     content: '今年も美味しいコシヒカリが収穫できました！皆様に感謝です。 #新潟コシヒカリ #収穫祭',
-    image: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&q=80' // 米の収穫画像
+    image: 'https://images.unsplash.com/photo-1633555412302-152f85ae4fe2?auto=format&fit=crop&q=80' // 米の収穫画像
   },
   {
     platform: 'Instagram',
