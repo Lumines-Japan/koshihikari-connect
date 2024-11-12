@@ -5,17 +5,17 @@ const recipes = [
   {
     title: "コシヒカリの炊き込みご飯",
     description: "季節の野菜と一緒に炊き上げる香り豊かな炊き込みご飯",
-    image: "/recipe-takikomi.jpg"
+    image: "https://www.pakutaso.com/shared/img/thumb/KAZUHIRO171013022_TP_V.jpg"
   },
   {
     title: "コシヒカリのおにぎり",
     description: "シンプルながら美味しい、基本のおにぎりレシピ",
-    image: "/recipe-onigiri.jpg"
+    image: "https://www.pakutaso.com/shared/img/thumb/KAZUHIRO171013023_TP_V.jpg"
   },
   {
     title: "コシヒカリの寿司",
     description: "新鮮な魚介類と合わせた本格的な寿司レシピ",
-    image: "/recipe-sushi.jpg"
+    image: "https://www.pakutaso.com/shared/img/thumb/KAZUHIRO171013024_TP_V.jpg"
   }
 ];
 
