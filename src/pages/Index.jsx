@@ -24,19 +24,65 @@ const Index = () => {
           <ProductIntro />
         </section>
         <section className="py-16 bg-snow-50">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-8 text-niigata-800">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl font-bold mb-8 text-center text-niigata-800">
               商品詳細
             </h2>
-            <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
-              <Link to="/product/dummy-1">
-                <Button className="w-full sm:w-auto">特選コシヒカリ 5kg ¥4,000</Button>
-              </Link>
-              <Link to="/product/dummy-2">
-                <Button className="w-full sm:w-auto">
-                  特選コシヒカリ 10kg ¥7,800
-                </Button>
-              </Link>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+              <div className="flex flex-col items-center space-y-4">
+                <img
+                  src="/rice-product-1.jpg"
+                  alt="特選コシヒカリ 5kg"
+                  className="w-full max-w-md rounded-lg shadow-lg"
+                />
+                <div className="flex space-x-2">
+                  <img
+                    src="/rice-detail-1.jpg"
+                    alt="商品詳細1"
+                    className="w-20 h-20 object-cover rounded-md cursor-pointer hover:opacity-75 transition-opacity"
+                  />
+                  <img
+                    src="/rice-detail-2.jpg"
+                    alt="商品詳細2"
+                    className="w-20 h-20 object-cover rounded-md cursor-pointer hover:opacity-75 transition-opacity"
+                  />
+                  <img
+                    src="/rice-detail-3.jpg"
+                    alt="商品詳細3"
+                    className="w-20 h-20 object-cover rounded-md cursor-pointer hover:opacity-75 transition-opacity"
+                  />
+                </div>
+                <Link to="/product/dummy-1">
+                  <Button className="w-full sm:w-auto">特選コシヒカリ 5kg ¥4,000</Button>
+                </Link>
+              </div>
+              <div className="flex flex-col items-center space-y-4">
+                <img
+                  src="/rice-product-2.jpg"
+                  alt="特選コシヒカリ 10kg"
+                  className="w-full max-w-md rounded-lg shadow-lg"
+                />
+                <div className="flex space-x-2">
+                  <img
+                    src="/rice-detail-4.jpg"
+                    alt="商品詳細4"
+                    className="w-20 h-20 object-cover rounded-md cursor-pointer hover:opacity-75 transition-opacity"
+                  />
+                  <img
+                    src="/rice-detail-5.jpg"
+                    alt="商品詳細5"
+                    className="w-20 h-20 object-cover rounded-md cursor-pointer hover:opacity-75 transition-opacity"
+                  />
+                  <img
+                    src="/rice-detail-6.jpg"
+                    alt="商品詳細6"
+                    className="w-20 h-20 object-cover rounded-md cursor-pointer hover:opacity-75 transition-opacity"
+                  />
+                </div>
+                <Link to="/product/dummy-2">
+                  <Button className="w-full sm:w-auto">特選コシヒカリ 10kg ¥7,800</Button>
+                </Link>
+              </div>
             </div>
           </div>
         </section>
