@@ -29,12 +29,12 @@ const Index = () => {
               商品詳細
             </h2>
             <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
-              <Link to="/product/1">
-                <Button className="w-full sm:w-auto">特選コシヒカリ 5kg</Button>
+              <Link to="/product/dummy-1">
+                <Button className="w-full sm:w-auto">特選コシヒカリ 5kg ¥4,000</Button>
               </Link>
-              <Link to="/product/2">
+              <Link to="/product/dummy-2">
                 <Button className="w-full sm:w-auto">
-                  有機栽培コシヒカリ 2kg
+                  特選コシヒカリ 10kg ¥7,800
                 </Button>
               </Link>
             </div>
