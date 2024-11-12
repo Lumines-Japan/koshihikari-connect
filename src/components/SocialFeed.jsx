@@ -11,7 +11,7 @@ const socialPosts = [
   {
     platform: 'Instagram',
     content: '朝日に輝く稲穂。自然の恵みに感謝しながら、今日も一日がんばります！ #田んぼの風景 #農家の日常',
-    image: 'https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&q=80' // 田んぼの画像
+    image: 'https://images.unsplash.com/photo-1730700521745-7648ef0abd0b?auto=format&fit=crop&q=80' // 田んぼの画像
   },
   {
     platform: 'Twitter',
