@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import ProductIntro from "../components/ProductIntro";
@@ -17,6 +18,18 @@ import { Link } from "react-router-dom";
 const Index = () => {
   return (
     <div className="min-h-screen flex flex-col">
+      <Helmet>
+        <title>新潟保内米 長谷川農園 | 特選コシヒカリの通販サイト</title>
+        <meta name="description" content="新潟県保内地区で栽培された最高級コシヒカリをお届けします。長谷川農園の代々受け継がれた技術と愛情で育てた特選米をご賞味ください。" />
+        <meta name="keywords" content="新潟米,コシヒカリ,保内米,長谷川農園,通販,産地直送,特選米" />
+        <meta property="og:title" content="新潟保内米 長谷川農園 | 特選コシヒカリの通販サイト" />
+        <meta property="og:description" content="新潟県保内地区で栽培された最高級コシヒカリをお届けします。長谷川農園の代々受け継がれた技術と愛情で育てた特選米をご賞味ください。" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://honaigome.com" />
+        <meta property="og:image" content="/og-image.svg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <link rel="canonical" href="https://honaigome.com" />
+      </Helmet>
       <Header />
       <main className="pt-16">
         <Hero />
