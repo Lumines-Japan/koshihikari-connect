@@ -6,17 +6,17 @@ const socialPosts = [
   {
     platform: 'Twitter',
     content: '今年も美味しいコシヒカリが収穫できました！皆様に感謝です。 #新潟コシヒカリ #収穫祭',
-    image: '/twitter-post-1.jpg'
+    image: 'https://images.unsplash.com/photo-1649972904349-6e44c42644a7'
   },
   {
     platform: 'Instagram',
     content: '朝日に輝く稲穂。自然の恵みに感謝しながら、今日も一日がんばります！ #田んぼの風景 #農家の日常',
-    image: '/instagram-post-1.jpg'
+    image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b'
   },
   {
     platform: 'Twitter',
     content: '新商品のお知らせ！今年の新米コシヒカリを使った「おにぎりセット」が登場です。ぜひお試しください！',
-    image: '/twitter-post-2.jpg'
+    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475'
   }
 ];
 
