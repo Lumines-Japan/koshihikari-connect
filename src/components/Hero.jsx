@@ -19,6 +19,7 @@ const Hero = () => {
         loop
         muted
         playsInline
+        crossOrigin="anonymous"
       >
         <source src="https://dffgvfuyuzktboucthiq.supabase.co/storage/v1/object/public/company-images/asset/773ae833.MP4" type="video/mp4" />
         Your browser does not support the video tag.
