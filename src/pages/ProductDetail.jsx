@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
+import Layout from '../components/Layout';
 
 const products = [
   {
@@ -28,27 +29,35 @@ const ProductDetail = () => {
   const product = products.find(p => p.id === parseInt(id));
 
   if (!product) {
-    return <div>商品が見つかりません。</div>;
+    return (
+      <Layout>
+        <div className="container mx-auto px-4 py-8">
+          <div className="text-center">商品が見つかりません。</div>
+        </div>
+      </Layout>
+    );
   }
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-4">{product.name}</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div>
-          <img src={product.image} alt={product.name} className="w-full h-auto rounded-lg shadow-lg" />
-        </div>
-        <div>
-          <p className="text-xl mb-4">{product.description}</p>
-          <p className="font-bold text-2xl mb-4">価格: ¥{product.price.toLocaleString()}</p>
-          <Button className="mb-4">カートに追加</Button>
-          <h2 className="text-2xl font-semibold mb-2">栄養成分</h2>
-          <p className="mb-4">{product.nutrition}</p>
-          <h2 className="text-2xl font-semibold mb-2">調理方法</h2>
-          <p className="whitespace-pre-line">{product.cookingMethod}</p>
+    <Layout>
+      <div className="container mx-auto px-4 py-8">
+        <h1 className="text-3xl font-bold mb-4">{product.name}</h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <img src={product.image} alt={product.name} className="w-full h-auto rounded-lg shadow-lg" />
+          </div>
+          <div>
+            <p className="text-xl mb-4">{product.description}</p>
+            <p className="font-bold text-2xl mb-4">価格: ¥{product.price.toLocaleString()}</p>
+            <Button className="mb-4">カートに追加</Button>
+            <h2 className="text-2xl font-semibold mb-2">栄養成分</h2>
+            <p className="mb-4">{product.nutrition}</p>
+            <h2 className="text-2xl font-semibold mb-2">調理方法</h2>
+            <p className="whitespace-pre-line">{product.cookingMethod}</p>
+          </div>
         </div>
       </div>
-    </div>
+    </Layout>
   );
 };
 
