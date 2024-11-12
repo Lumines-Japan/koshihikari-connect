@@ -8,7 +8,7 @@ const dummyProducts = [
     images: ['/placeholder.svg'],
     default_price: {
       id: 'price_dummy1',
-      unit_amount: 2500,
+      unit_amount: 4000, // Updated from 2500 to 4000
     },
   },
   {
@@ -18,7 +18,7 @@ const dummyProducts = [
     images: ['/placeholder.svg'],
     default_price: {
       id: 'price_dummy2',
-      unit_amount: 4800,
+      unit_amount: 7800, // Updated from 4800 to 7800
     },
   },
 ];
