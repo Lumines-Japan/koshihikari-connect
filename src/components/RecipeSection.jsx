@@ -5,7 +5,7 @@ const recipes = [
   {
     title: "コシヒカリの炊き込みご飯",
     description: "季節の野菜と一緒に炊き上げる香り豊かな炊き込みご飯",
-    image: "https://www.pakutaso.com/shared/img/thumb/KAZUHIRO171013022_TP_V.jpg"
+    image: "https://user0514.cdnw.net/shared/img/thumb/BIBAI2135_TP_V.jpg"
   },
   {
     title: "コシヒカリのおにぎり",
