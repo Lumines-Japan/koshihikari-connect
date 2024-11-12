@@ -40,17 +40,6 @@ const Index = () => {
             </div>
           </div>
         </section>
-        <section className="py-16 bg-snow-100">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-8 text-niigata-800">
-              ご注文
-            </h2>
-            <div className="max-w-2xl mx-auto">
-              {/* 注文フォームコンポーネントをインポートして使用 */}
-              {/* <OrderForm /> */}
-            </div>
-          </div>
-        </section>
         <BlogSection />
         <section id="recipes">
           <RecipeSection />
