@@ -15,7 +15,7 @@ const recipes = [
   {
     title: "コシヒカリの寿司",
     description: "新鮮な魚介類と合わせた本格的な寿司レシピ",
-    image: "https://www.pakutaso.com/shared/img/thumb/KAZUHIRO171013024_TP_V.jpg"
+    image: "https://user0514.cdnw.net/shared/img/thumb/nihonbashisusiHFKE9488_TP_V.jpg"
   }
 ];
 
