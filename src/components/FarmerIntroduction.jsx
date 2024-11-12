@@ -10,7 +10,7 @@ const farmers = [
   {
     name: "田中 美咲",
     description: "若手女性農家。最新技術と伝統的な手法を組み合わせた革新的な農業に取り組む。",
-    image: "https://o-dan.net/ja/wp-content/uploads/sites/4/2023/12/young-farmer.jpg"
+    image: "https://user0514.cdnw.net/shared/img/thumb/rinmonsan03152100_TP_V.jpg"
   },
   {
     name: "鈴木 一郎",
