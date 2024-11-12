@@ -10,7 +10,7 @@ const recipes = [
   {
     title: "コシヒカリのおにぎり",
     description: "シンプルながら美味しい、基本のおにぎりレシピ",
-    image: "https://www.pakutaso.com/shared/img/thumb/KAZUHIRO171013023_TP_V.jpg"
+    image: "https://user0514.cdnw.net/shared/img/thumb/SAWA_asariiri_TP_V.jpg"
   },
   {
     title: "コシヒカリの寿司",
