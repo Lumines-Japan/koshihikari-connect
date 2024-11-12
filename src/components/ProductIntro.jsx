@@ -14,7 +14,7 @@ const ProductIntro = () => {
             <p className="text-niigata-600">一粒一粒丁寧に選別し、最高品質の米だけをお届けします。</p>
           </div>
           <div className="bg-snow-50 p-6 rounded-lg shadow-lg">
-            <img src="https://www.photo-ac.com/main/detail/23849826" alt="自然環境" className="w-full h-48 object-cover rounded-t-lg mb-4" />
+            <img src="https://user0514.cdnw.net/shared/img/thumb/JYUN923_1_TP_V4.jpg" alt="自然環境" className="w-full h-48 object-cover rounded-t-lg mb-4" />
             <h3 className="text-2xl font-semibold mb-2 text-niigata-700">豊かな自然環境</h3>
             <p className="text-niigata-600">新潟の肥沃な大地と清らかな水で育った逸品です。</p>
           </div>
