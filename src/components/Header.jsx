@@ -87,14 +87,18 @@ const Header = () => {
               </li>
             </ul>
             <div className="mt-4 md:hidden px-4 pb-4">
-              <Button className="w-3/4 mx-auto block bg-rice-500 hover:bg-rice-700 text-niigata-900">
-                今すぐ購入
-              </Button>
+              <Link to="/product/dummy-1" className="w-3/4 mx-auto block">
+                <Button className="w-full bg-rice-500 hover:bg-rice-700 text-niigata-900">
+                  今すぐ購入
+                </Button>
+              </Link>
             </div>
           </nav>
-          <Button className="hidden md:block bg-rice-500 hover:bg-rice-700 text-niigata-900">
-            今すぐ購入
-          </Button>
+          <Link to="/product/dummy-1" className="hidden md:block">
+            <Button className="bg-rice-500 hover:bg-rice-700 text-niigata-900">
+              今すぐ購入
+            </Button>
+          </Link>
         </div>
       </div>
     </header>

@@ -1,12 +1,13 @@
 import React, { useRef, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const videoRef = useRef(null);
 
   useEffect(() => {
     if (videoRef.current) {
-      videoRef.current.playbackRate = 0.5; // 再生速度を0.5倍（半分の速度）に設定
+      videoRef.current.playbackRate = 0.5;
     }
   }, []);
 
@@ -28,7 +29,9 @@ const Hero = () => {
       <div className="relative z-10 text-center text-snow-50">
         <h1 className="text-5xl md:text-7xl font-bold mb-4">極上の新潟コシヒカリ</h1>
         <p className="text-xl md:text-2xl mb-8">自然の恵みと匠の技が生み出す、至高の一粒</p>
-        <Button className="bg-rice-500 hover:bg-rice-700 text-niigata-900 text-lg px-8 py-3">今すぐ購入</Button>
+        <Link to="/product/dummy-1">
+          <Button className="bg-rice-500 hover:bg-rice-700 text-niigata-900 text-lg px-8 py-3">今すぐ購入</Button>
+        </Link>
       </div>
     </section>
   );
