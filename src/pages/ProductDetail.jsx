@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import Layout from '../components/Layout';
 import { useQuery } from '@tanstack/react-query';
@@ -8,8 +8,8 @@ import { useToast } from "@/components/ui/use-toast";
 
 const ProductDetail = () => {
   const { id } = useParams();
-  const navigate = useNavigate();
   const { toast } = useToast();
+  const [selectedImage, setSelectedImage] = useState(0);
   const [isAddingToCart, setIsAddingToCart] = useState(false);
 
   const { data: products, isLoading, error } = useQuery({
@@ -84,12 +84,33 @@ const ProductDetail = () => {
       <div className="container mx-auto px-4 py-8">
         <h1 className="text-3xl font-bold mb-4">{product.name}</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div>
-            <img 
-              src={product.images[0] || '/placeholder.svg'} 
-              alt={product.name} 
-              className="w-full h-auto rounded-lg shadow-lg" 
-            />
+          <div className="space-y-4">
+            <div className="relative aspect-square">
+              <img 
+                src={product.images[selectedImage] || '/placeholder.svg'} 
+                alt={product.name} 
+                className="w-full h-full object-cover rounded-lg shadow-lg" 
+              />
+            </div>
+            {product.images.length > 1 && (
+              <div className="flex gap-2 overflow-x-auto pb-2">
+                {product.images.map((image, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setSelectedImage(index)}
+                    className={`relative w-20 h-20 flex-shrink-0 rounded-md overflow-hidden ${
+                      selectedImage === index ? 'ring-2 ring-primary' : ''
+                    }`}
+                  >
+                    <img
+                      src={image}
+                      alt={`${product.name} - 画像 ${index + 1}`}
+                      className="w-full h-full object-cover"
+                    />
+                  </button>
+                ))}
+              </div>
+            )}
           </div>
           <div>
             <p className="text-xl mb-4">{product.description}</p>
