@@ -3,7 +3,6 @@ import { Helmet } from "react-helmet";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import ProductIntro from "../components/ProductIntro";
-import CustomerReviews from "../components/CustomerReviews";
 import SpecialOffer from "../components/SpecialOffer";
 import FAQ from "../components/FAQ";
 import Footer from "../components/Footer";
@@ -47,7 +46,7 @@ const Index = () => {
                   <img
                     src="/rice-product-1.jpg"
                     alt="特選コシヒカリ 5kg"
-                    className="w-full h-full object-contain rounded-lg shadow-lg"
+                    className="w-full h-full object-contain"
                   />
                 </div>
                 <div className="flex space-x-2">
@@ -76,7 +75,7 @@ const Index = () => {
                   <img
                     src="/rice-product-2.jpg"
                     alt="特選コシヒカリ 10kg"
-                    className="w-full h-full object-contain rounded-lg shadow-lg"
+                    className="w-full h-full object-contain"
                   />
                 </div>
                 <div className="flex space-x-2">
