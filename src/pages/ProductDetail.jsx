@@ -85,21 +85,21 @@ const ProductDetail = () => {
         <h1 className="text-3xl font-bold mb-4">{product.name}</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="space-y-4">
-            <div className="relative w-full h-[400px]">
+            <div className="w-full h-[400px]">
               <img 
                 src={product.images[selectedImage] || '/placeholder.svg'} 
                 alt={product.name} 
-                className="w-full h-full object-contain rounded-lg shadow-lg" 
+                className="w-full h-full object-contain" 
               />
             </div>
             {product.images.length > 1 && (
-              <div className="flex gap-2 overflow-x-auto pb-2">
+              <div className="flex gap-2 mt-4">
                 {product.images.map((image, index) => (
                   <button
                     key={index}
                     onClick={() => setSelectedImage(index)}
-                    className={`relative w-24 h-24 flex-shrink-0 rounded-md overflow-hidden ${
-                      selectedImage === index ? 'ring-2 ring-primary' : ''
+                    className={`w-20 h-20 flex-shrink-0 ${
+                      selectedImage === index ? 'border-2 border-niigata-500' : 'border border-snow-200'
                     }`}
                   >
                     <img
