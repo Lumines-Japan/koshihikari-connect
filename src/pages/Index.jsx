@@ -104,11 +104,11 @@ const Index = () => {
           </div>
         </section>
         <BlogSection />
-        <section id="recipes">
-          <RecipeSection />
-        </section>
         <section id="farmers">
           <FarmerIntroduction />
+        </section>
+        <section id="recipes">
+          <RecipeSection />
         </section>
         <section id="reviews">
           <CustomerReviewGallery />
